@@ -1,4 +1,4 @@
-# Connected Research Copilot Chat Application
+# Connected Research Copilot 
 
 A production-ready, highly secure biomedical research assistant using FastAPI, LangGraph agent orchestration, real-time citation retrieval, and a gorgeous, responsive, glassmorphic UI.
 
