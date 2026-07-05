@@ -17,6 +17,10 @@ A production-ready, highly secure biomedical research assistant using FastAPI, L
 *   **Security & Safety Guardrails**: Built-in regex filters and prompt-injection defense engines to neutralize template attacks, off-topic requests, and file-traversal exploits.
 
 ---
+## Pipeline
+<img width="762" height="1162" alt="image" src="https://github.com/user-attachments/assets/55809e27-a32a-4283-97bf-d8fedbd8c3e7" />
+
+---
 
 ## Repository Layout
 
