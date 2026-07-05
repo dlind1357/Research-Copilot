@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Copilot — Ask anything.</title>
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Premium Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <!-- Background Radial Gradients -->
+    <div class="glow-bg">
+        <div class="glow-sphere glow-1"></div>
+        <div class="glow-sphere glow-2"></div>
+        <div class="glow-sphere glow-3"></div>
+    </div>
+
+    <!-- Application Container -->
+    <main class="app-container">
+        <!-- Main Premium Chat Card -->
+        <section class="chat-card">
+            <!-- Header Section -->
+            <header class="chat-header">
+                <div class="brand-section">
+                    <div class="logo-wrapper">
+                        <i data-lucide="sparkles" class="brand-icon"></i>
+                    </div>
+                    <div class="title-meta">
+                        <h1>Research Copilot</h1>
+                        <p class="subtitle">Ask anything.</p>
+                    </div>
+                </div>
+                <div class="status-badge">
+                    <span class="pulse-indicator"></span>
+                    <span class="status-text">Standby</span>
+                </div>
+            </header>
+
+            <!-- Conversation Display Panel -->
+            <div class="conversation-panel" id="conversationPanel">
+                <!-- Welcome/Intro Card -->
+                <div class="welcome-view" id="welcomeView">
+                    <div class="welcome-icon-box">
+                        <i data-lucide="microscope" class="welcome-icon"></i>
+                    </div>
+                    <h2>Welcome to the Lab</h2>
+                    <p>Enter a query to explore scientific literature, analyze medical gene sequences, or review clinical discoveries.</p>
+                    
+                    <div class="suggested-queries">
+                        <button class="suggestion-btn" onclick="applySuggestion('Tell me what the BAMBI gene does.')">
+                            <i data-lucide="dna" class="suggested-icon"></i>
+                            <span>Explain the BAMBI gene</span>
+                        </button>
+                        <button class="suggestion-btn" onclick="applySuggestion('Review research from 2021-2026 regarding Multiple Sclerosis. Summarize key discoveries.')">
+                            <i data-lucide="file-text" class="suggested-icon"></i>
+                            <span>Recent MS Research</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Active chat messages will go here -->
+                <div class="messages-container" id="messagesContainer"></div>
+
+                <!-- Animated Loading/Thinking Indicator -->
+                <div class="typing-indicator" id="typingIndicator">
+                    <div class="assistant-avatar">
+                        <i data-lucide="bot"></i>
+                    </div>
+                    <div class="indicator-bubble">
+                        <span class="thinking-text">Thinking</span>
+                        <div class="dots">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer / Input Form Area -->
+            <footer class="chat-footer">
+                <form id="chatForm" class="input-form">
+                    <div class="input-wrapper">
+                        <textarea 
+                            id="messageInput" 
+                            placeholder="Type a scientific query, gene sequence, or search term..." 
+                            rows="1"
+                            aria-label="Scientific query input"
+                            required
+                        ></textarea>
+                    </div>
+                    <button type="submit" id="sendBtn" class="send-button" aria-label="Send query">
+                        <span class="btn-text">Submit</span>
+                        <i data-lucide="arrow-up" class="btn-icon"></i>
+                    </button>
+                </form>
+                <div class="keyboard-hint">
+                    <span>Press <strong>Enter</strong> to send, <strong>Shift + Enter</strong> for line break</span>
+                </div>
+            </footer>
+        </section>
+    </main>
+
+    <!-- App Logic -->
+    <script src="/static/js/app.js"></script>
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>

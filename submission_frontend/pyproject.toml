@@ -1,0 +1,14 @@
+[project]
+name = "research-copilot-frontend"
+version = "1.0.0"
+description = "A premium production-quality single-page chat interface for Research Copilot"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.110.0",
+    "uvicorn>=0.30.0",
+    "jinja2>=3.1.4",
+    "pydantic>=2.0.0",
+    "google-adk",
+    "google-cloud-aiplatform"
+]
